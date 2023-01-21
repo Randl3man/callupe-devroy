@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <div>
+      <h1 id="title">Sign up for our newsletter!</h1>
+      <p id="description">Enter your details to get news on the top-rated movies around, every month!</p>
+      <form id="survey-form">
+        <section>
+          <div>
+            <label id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required />
+          </div>
+          <div>
+            <label id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required />
+          </div>
+          <div>
+            <label id="number-label">Age</label>
+            <input type="number" id="number" placeholder="Enter age" min="18" max="65" />
+          </div>
+        </section>
+        <section class="banded">
+          <div>
+            <div>
+              <label>Choose favorite studio</label>
+              <select id="dropdown">
+                <optgroup>
+                  <option value="studio01">Studio 1</option>
+                  <option value="studio02">Studio 2</option>
+                  <option value="studio03">Studio 3</option>
+                </optgroup>
+              </select>
+            </div>
+            <div>
+              <label>Include <em>Studio News Weekly</em></label>
+              <input type="radio" name="include_studio" value="0" />No
+              <input type="radio" name="include_studio" value="1" />Yes
+            </div>
+          </div>
+          <div>
+            <label>Choose Genre</label>
+            <input type="checkbox" name="genre" value="g1" /> Genre 1
+            <input type="checkbox" name="genre" value="g2" /> Genre 2
+            <input type="checkbox" name="genre" value="g3" /> Genre 3
+            <input type="checkbox" name="genre" value="g4" /> Genre 4
+          </div>
+        </section>
+        <section>
+          <label>
+            Comment
+          </label>
+          <textarea id="comment" placeholder="Enter comment"></textarea>
+        </section>
+        <button id="submit" click="submit()">Sign Up</button>
+      </form>
+    </div>
+    <script  src="js/index.js"></script>
+    <script type="text/javascript">
+      var form = document.querySelector('#survey-form');
+    
+      function submit(){
+        form.submit()
+      }
+    </script>
+  </body>
+</html>
